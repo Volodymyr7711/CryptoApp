@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80452CB42840290400E5209D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80452CB32840290400E5209D /* TabBarController.swift */; };
+		80452CB628402B2E00E5209D /* CryptoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80452CB528402B2E00E5209D /* CryptoDetailsViewController.swift */; };
 		80B5815E283E32FC00A507F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5815D283E32FC00A507F4 /* AppDelegate.swift */; };
 		80B58160283E32FC00A507F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5815F283E32FC00A507F4 /* SceneDelegate.swift */; };
 		80B58162283E32FC00A507F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B58161283E32FC00A507F4 /* ViewController.swift */; };
 		80B58165283E32FC00A507F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B58163283E32FC00A507F4 /* Main.storyboard */; };
 		80B58167283E330500A507F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B58166283E330500A507F4 /* Assets.xcassets */; };
 		80B5816A283E330500A507F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B58168283E330500A507F4 /* LaunchScreen.storyboard */; };
+		80B58172283E355000A507F4 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B58171283E355000A507F4 /* ApiCaller.swift */; };
+		80B58174283E3A8400A507F4 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B58173283E3A8400A507F4 /* CryptoTableViewCell.swift */; };
+		80CF05AF283E51A900E66FE5 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF05AE283E51A900E66FE5 /* Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80452CB32840290400E5209D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		80452CB528402B2E00E5209D /* CryptoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsViewController.swift; sourceTree = "<group>"; };
 		80B5815A283E32FC00A507F4 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B5815D283E32FC00A507F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80B5815F283E32FC00A507F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		80B58166283E330500A507F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80B58169283E330500A507F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80B5816B283E330500A507F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B58171283E355000A507F4 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		80B58173283E3A8400A507F4 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		80CF05AE283E51A900E66FE5 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80452CAD284028A100E5209D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80B58161283E32FC00A507F4 /* ViewController.swift */,
+				80452CB528402B2E00E5209D /* CryptoDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		80452CAF284028B500E5209D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				80B58173283E3A8400A507F4 /* CryptoTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		80452CB0284028C300E5209D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80CF05AE283E51A900E66FE5 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80452CB1284028D100E5209D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				80B58171283E355000A507F4 /* ApiCaller.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		80452CB2284028E700E5209D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				80452CB32840290400E5209D /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		80B58151283E32FC00A507F4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +109,11 @@
 			children = (
 				80B5815D283E32FC00A507F4 /* AppDelegate.swift */,
 				80B5815F283E32FC00A507F4 /* SceneDelegate.swift */,
-				80B58161283E32FC00A507F4 /* ViewController.swift */,
+				80452CB2284028E700E5209D /* TabBar */,
+				80452CAD284028A100E5209D /* ViewControllers */,
+				80452CB1284028D100E5209D /* Network */,
+				80452CAF284028B500E5209D /* TableViewCell */,
+				80452CB0284028C300E5209D /* Model */,
 				80B58163283E32FC00A507F4 /* Main.storyboard */,
 				80B58166283E330500A507F4 /* Assets.xcassets */,
 				80B58168283E330500A507F4 /* LaunchScreen.storyboard */,
@@ -138,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CF05AF283E51A900E66FE5 /* Crypto.swift in Sources */,
 				80B58162283E32FC00A507F4 /* ViewController.swift in Sources */,
 				80B5815E283E32FC00A507F4 /* AppDelegate.swift in Sources */,
 				80B58160283E32FC00A507F4 /* SceneDelegate.swift in Sources */,
+				80452CB42840290400E5209D /* TabBarController.swift in Sources */,
+				80B58174283E3A8400A507F4 /* CryptoTableViewCell.swift in Sources */,
+				80452CB628402B2E00E5209D /* CryptoDetailsViewController.swift in Sources */,
+				80B58172283E355000A507F4 /* ApiCaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
